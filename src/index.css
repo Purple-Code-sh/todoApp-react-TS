@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+  background-color: rgb(40, 35, 57);
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
