@@ -7,7 +7,6 @@ module.exports = {
       white: "#ffffff",
       black: "#000000",
       ssTheme: {
-        whiteBlue: "rgba(242, 238, 255, 1)",
         darkest: "rgb(40, 35, 57)",
         darker: "rgb(51, 53, 66)",
         dark: "rgb(60, 66, 86)",
