@@ -1,16 +1,12 @@
 function App() {
   return (
     <div className=" bg-ssTheme-darkest">
-      <div className=" bg-ssTheme-darkest h-16 " />
-      <div className=" bg-ssTheme-darker h-16 " />
-      <div className=" bg-ssTheme-dark h-16 " />
-      <div className=" bg-ssTheme-gray h-16 " />
-      <div className=" bg-ssTheme-grayPurple h-16 " />
-      <div className=" bg-ssTheme-blue h-16 " />
-      <div className=" bg-ssTheme-lightPurple h-16 " />
-      <div className=" bg-ssTheme-purple h-16 " />
-      <div className=" bg-ssTheme-darkYellow h-16 " />
-      <div className=" bg-ssTheme-yellow h-16 " />
+      <h1 className="w-fit m-4 text-white/90 hover:text-ssTheme-purple text-7xl font-bold">
+        Hello
+      </h1>
+      <span className=" text-ssTheme-yellow font-semibold hover:text-ssTheme-darkYellow m-5 hover:underline hover:cursor-pointer">
+        More info
+      </span>
     </div>
   );
 }

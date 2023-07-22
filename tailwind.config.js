@@ -15,8 +15,8 @@ module.exports = {
         yellow: "rgb(244, 209, 119)",
         darkYellow: "rgb(191, 165, 122)",
         blue: "rgb(180, 180, 242)",
-        purple: "rgb(98, 48, 140)",
-        lightPurple: "rgb(160, 122, 191)",
+        darkPurple: "rgb(98, 48, 140)",
+        purple: "rgb(160, 122, 191)",
       },
     },
     screens: {
