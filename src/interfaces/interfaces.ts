@@ -13,4 +13,5 @@ export interface TodoState {
 
 export type todoContextProps = {
   todoState: TodoState;
+  toggleTodo: (id: string) => void;
 };
