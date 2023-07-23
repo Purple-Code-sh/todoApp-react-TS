@@ -10,3 +10,7 @@ export interface TodoState {
   completed: number;
   pending: number;
 }
+
+export type todoContextProps = {
+  todoState: TodoState;
+};
