@@ -9,7 +9,7 @@ export default function TodoItem({ todo }: todoItemProps) {
   const { toggleTodo } = useTodosContext();
   const done = todo.completed ? "Undone" : "Done";
   return (
-    <li className=" group cursor-pointer grid grid-rows-1 grid-flow-col  my-2 py-2 px-3 rounded-lg w-full bg-ssTheme-dark font-semibold ">
+    <li className=" group cursor-default grid grid-rows-1 grid-flow-col  my-2 py-2 px-3 rounded-lg w-full bg-ssTheme-dark font-semibold ">
       <p
         style={{
           textDecoration: todo.completed ? "line-through" : "none",
@@ -19,14 +19,19 @@ export default function TodoItem({ todo }: todoItemProps) {
       >
         {todo.description}
       </p>
-      <span
-        className="  w-fit invisible group-hover:visible justify-self-end text-ssTheme-purple hover:underline"
-        onClick={() => {
-          toggleTodo(todo.id);
-        }}
-      >
-        {done}
-      </span>
+      <div className="  w-fit invisible group-hover:visible justify-self-end text-ssTheme-purple">
+        <span
+          className="hover:underline mr-2 cursor-pointer"
+          onClick={() => {
+            toggleTodo(todo.id);
+          }}
+        >
+          {done}
+        </span>
+        <span className="hover:underline text-ssTheme-gray  cursor-pointer">
+          Delete
+        </span>
+      </div>
     </li>
   );
 }
